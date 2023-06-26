@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+}
+
+
+.wrap {
+  min-height: 700px;
+  margin: 10%;
+  padding: 63px 85px;
+  border-radius: 10px;
+  background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #352A3B);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.search-wrap {
+  position: relative;
+}
+
+.search-repo {
+  font-size: 48px;
+  font-weight: bold;
+  width: 100%;
+  height: 61px;
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.auto-com__list {
+  position: absolute;
+  top: 58px;
+  width: 100%;
+}
+
+.auto-com__item {
+  cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 25px;
+  padding: 7px 5px;
+  background-color: rgba(227, 227, 227, 1);
+  border: 1px solid black;
+  transition: all .1s ease;
+}
+
+.auto-com__item:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.auto-com__item:hover {
+  background-color: rgb(40, 136, 215);
+}
+
+.auto-com__item:active {
+  background-color: rgb(236, 226, 38);
+}
+
+.added-repo__item {
+  border: 1px solid black;
+  padding: 8px 16px;
+  background-color: rgb(195, 17, 211);
+  display: flex;
+  justify-content: space-between;
+}
+
+.added-repo__item-info {
+  max-width: 79%;
+  overflow: hidden;
+}
+
+.delete-repo {
+  cursor: pointer;
+  margin: auto 0;
+  overflow: hidden;
+  width: 42px;
+  height: 38px;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.delete-repo__span-left {
+  display: inline-block;
+  width: 100px;
+  height: 4px;
+  background-color: red;
+  transform: translate(-36px) rotate(43deg);
+}
+
+.delete-repo__span-right {
+  display: inline-block;
+  width: 100px;
+  height: 4px;
+  background-color: red;
+  transform: translate(-40px) rotate(-42deg);
+}
